@@ -183,7 +183,7 @@ body{
     
     animation: rotate 1s infinite linear;
     z-index: 5;
-    background-image: url("../img/pokemon-go-png-13298.png");
+    background-image: url("../img/Pokeball.png");
     background-position: center;
     background-size: cover;
 }
