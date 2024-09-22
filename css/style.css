@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(186, 197, 248), rgb(255, 255, 255), rgb(186, 197, 248)) ;
+}
+
+.pokedex-box{
+    margin-top: 10px;
+    width: 350px;
+    position: relative;
+}
+.pokedex{
+  width: 100%;
+}
+.tela{
+    width: 69%;
+    height: 41%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 43.40%;
+    left: 52.40%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/BlueBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#name-box{
+    display: none;
+}
+.tela h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+    font-weight: 600;
+    font-size: clamp(6px, 4vw, 16px);
+    color: #999999;
+    background: white;
+    padding: 2px 10px;
+    border-radius: 30px;
+    box-shadow: -1px 1px 0px #333, -2px 2px 0px #272727;
+    text-transform: capitalize;
+}
+.tela h1:hover{
+    background: rgb(219, 219, 219);
+}
+.name__pokemon{
+    color: #333;
+}
+.tela .box-types{
+    position: absolute;
+    display: none;
+    gap: 10px;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
+.box-types .type{
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: clamp(1px, 4vw, 15px);
+    font-weight: 500;
+    background: #68A090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 5px rgb(44, 44, 44);
+}
+.type img{
+    width: 20%;
+}
+.image-pokemon{
+    display: none;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+
+}
+.input-search{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    bottom: 16%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    font-size: clamp(7px, 3vw, 15px);
+    padding: 0px 5px;
+    outline: none;
+    border: 2px solid black;
+}
+.buttons-box{
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    bottom: 5%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+}
+.buttons-box button{
+    outline: none;
+    border: 2px solid #333;
+    padding: 0px 11px;
+    background-color: #929292;
+    box-shadow: -2px 2px 0px #333, -4px 4px 0px #272727;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.buttons-box i{
+    font-size: clamp(12px, 10vw, 30px);
+    color: #585858;
+}
+.buttons-box button:active{
+    box-shadow: 2px -2px 0px #333;
+    background-color: #b1b1b1;  
+}
+
+.audio-control{
+    position: absolute;
+    bottom: 29.75%;
+    left: 23%;
+}
+.audio-control i{
+    font-size: clamp(5px, 4vw, 13px);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.audio-control:hover i{
+    color: white;
+}
+
+#github{
+    position: absolute;
+    bottom: 28%;
+    left: 59%;
+    transition: 0.2s;
+}
+#github i{
+    font-size: clamp(5px, 10vw, 30px);
+    color: #D2232A;
+    cursor: pointer;
+
+}
+#github:hover{
+    scale: 1.080;
+}
+.box-logo-pokemon{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+.pokemon-logo{
+    width: clamp(50px, 25vw, 100px);
+}
+
+
+
+.loading{
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    width: 60px;
+    height: 60px;
+    background: #D2232A;
+    border-radius: 30px;
+    
+    
+    animation: rotate 1s infinite linear;
+    z-index: 5;
+    background-image: url("../img/pokemon-go-png-13298.png");
+    background-position: center;
+    background-size: cover;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
